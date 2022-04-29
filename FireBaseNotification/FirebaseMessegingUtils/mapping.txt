@@ -1,0 +1,24 @@
+# compiler: R8
+# compiler_version: 3.1.66
+# pg_map_id: f1b70b4
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"1.0"}
+com.example.firebasemessegingutils.BuildConfig -> com.example.firebasemessegingutils.BuildConfig:
+    7:7:void <clinit>() -> <clinit>
+    6:6:void <init>() -> <init>
+com.example.firebasemessegingutils.FirebaseNotification -> com.example.firebasemessegingutils.FirebaseNotification:
+# {"id":"sourceFile","fileName":"FirebaseNotification.kt"}
+    26:26:void <init>(java.lang.String) -> <init>
+    26:26:android.graphics.Bitmap access$getBitmap$cp() -> access$getBitmap$cp
+    26:26:void access$setBitmap$cp(android.graphics.Bitmap) -> access$setBitmap$cp
+    41:74:void generateNotification(android.content.Context,java.lang.String,java.lang.String,android.net.Uri) -> generateNotification
+    77:84:void getToken() -> getToken
+    78:83:void getToken$lambda-0(com.google.android.gms.tasks.Task) -> getToken$lambda-0
+    130:160:boolean showImageNotification(android.content.Context,java.lang.String,java.lang.String,int,android.app.PendingIntent,int) -> showImageNotification
+    173:214:boolean showImageUrlNotification(android.content.Context,java.lang.String,java.lang.String,int,android.app.PendingIntent,java.lang.String,int) -> showImageUrlNotification
+    94:117:boolean simpleNotification(android.content.Context,java.lang.String,java.lang.String,int,android.app.PendingIntent,int) -> simpleNotification
+com.example.firebasemessegingutils.FirebaseNotification$Companion -> com.example.firebasemessegingutils.FirebaseNotification$Companion:
+# {"id":"sourceFile","fileName":"FirebaseNotification.kt"}
+    29:29:void <init>() -> <init>
+    31:31:android.graphics.Bitmap getBitmap() -> getBitmap
+    31:31:void setBitmap(android.graphics.Bitmap) -> setBitmap

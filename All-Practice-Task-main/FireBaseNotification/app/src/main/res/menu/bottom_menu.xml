@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bNotification"
+        android:title="@string/notification"
+        android:icon="@drawable/notification"
+        android:enabled="true"
+        app:showAsAction="ifRoom|withText"
+        />
+    <item
+        android:id="@+id/bSqliteDb"
+        android:title="@string/sqlite_database"
+        android:icon="@drawable/sqlite"
+        android:enabled="true"
+        app:showAsAction="ifRoom|withText"
+        />
+    <item
+        android:id="@+id/bObjectBoxDb"
+        android:title="@string/object_box_db"
+        android:icon="@drawable/objectbox"
+        android:enabled="true"
+        app:showAsAction="ifRoom|withText"
+        />
+
+
+</menu>

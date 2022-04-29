@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="user"
+            type="com.example.firebasenotification.sqlLite.UserModel" />
+
+    </data>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    android:id="@+id/const_MAin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp">
+
+        <TextView
+            android:id="@+id/tv_Customer_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="10dp"
+            android:layout_toStartOf="@+id/tv_Customer_phone"
+            android:layout_alignParentStart="true"
+            android:text="@{user.contact_name}"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_Customer_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="10dp"
+            android:layout_toStartOf="@+id/tv_Customer_Gender"
+            android:text="@{user.contact_number}"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_Customer_Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="10dp"
+            android:layout_toStartOf="@+id/img_edit"
+            android:text="@{user.gender}"
+            android:textColor="@color/black" />
+
+
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginEnd="12dp"
+            android:layout_toStartOf="@+id/img_delete"
+            android:clickable="true"
+            android:contentDescription="@string/image"
+            android:focusable="true"
+            android:src="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/img_delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/delete"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/image" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</layout>

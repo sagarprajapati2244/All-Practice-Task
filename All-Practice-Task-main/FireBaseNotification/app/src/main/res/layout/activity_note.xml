@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".objectDatabase.NoteActivity">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_Note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:hint="@string/enter_note_instruction"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:layout_marginVertical="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_Add_Note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_note"
+            android:onClick="onAddButtonClick"
+            android:layout_below="@+id/edt_Note"
+            android:layout_centerInParent="true"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_Add_Note"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="16dp"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textSize="15sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_Notes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvNotes"
+            android:drawSelectorOnTop="true"
+            android:scrollbars="none"
+            android:smoothScrollbar="true"
+            android:fadeScrollbars="true"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbarStyle="insideInset"/>
+
+
+
+</RelativeLayout>
+</layout>

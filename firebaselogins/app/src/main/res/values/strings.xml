@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FirebaseLogin</string>
+    <string name="web_client_id">453230617224-g2gvo729p91mt6488ikmo3i6cscgjv3k.apps.googleusercontent.com</string>
+    <string name="g_sign_in">Google Sign in</string>
+    <string name="g_sign_out">Google Sign Out</string>
+    <string name="login">Login</string>
+    <string name="_91">+91</string>
+    <string name="login_verify">LOGIN VERiFy</string>
+    <string name="facebook_app_id">377367914254949</string>
+    <string name="fb_login_protocol_scheme">fb377367914254949</string>
+    <string name="facebook_sign_in">Facebook Sign In</string>
+    <string name="facebook_sign_out">Facebook Sign Out</string>
+    <string name="don_t_get_the_code_resend_verification_code">Don\'t Get The Code? Resend Verification Code</string>
+    <string name="send_notification">send notification</string>
+    <string name="enter_notification_title">Enter Notification Title</string>
+    <string name="enter_notification_message">Enter Notification Message</string>
+    <string name="enter_image_url">Enter Image Url</string>
+</resources>

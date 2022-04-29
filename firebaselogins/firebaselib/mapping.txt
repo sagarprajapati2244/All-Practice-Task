@@ -1,0 +1,67 @@
+# compiler: R8
+# compiler_version: 3.1.66
+# pg_map_id: 1038377
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"1.0"}
+com.ups.firebaselib.BuildConfig -> com.ups.firebaselib.BuildConfig:
+    7:7:void <clinit>() -> <clinit>
+    6:6:void <init>() -> <init>
+com.ups.firebaselib.FirebaseFacebookAuth -> com.ups.firebaselib.FirebaseFacebookAuth:
+# {"id":"sourceFile","fileName":"FirebaseFacebookAuth.kt"}
+    15:17:void <init>(android.content.Context) -> <init>
+    15:15:void access$handleFacebookAccessToken(com.ups.firebaselib.FirebaseFacebookAuth,com.facebook.AccessToken) -> access$handleFacebookAccessToken
+    84:93:boolean alreadySignOrNot() -> alreadySignOrNot
+    21:43:void facebookLogin(android.app.Activity,com.ups.firebaselib.FirebaseFacebookAuth$FacebookListener) -> facebookLogin
+    64:81:void handleFacebookAccessToken(com.facebook.AccessToken) -> handleFacebookAccessToken
+    67:80:void handleFacebookAccessToken$lambda-1(com.ups.firebaselib.FirebaseFacebookAuth,com.google.android.gms.tasks.Task) -> handleFacebookAccessToken$lambda-1
+    46:61:void handleFacebookRemoveToken(com.ups.firebaselib.FirebaseFacebookAuth$FacebookListener) -> handleFacebookRemoveToken
+    54:57:void handleFacebookRemoveToken$lambda-0(com.facebook.GraphResponse) -> handleFacebookRemoveToken$lambda-0
+    99:100:void onActivityResultFB(int,int,android.content.Intent) -> onActivityResultFB
+com.ups.firebaselib.FirebaseFacebookAuth$FacebookListener -> com.ups.firebaselib.FirebaseFacebookAuth$FacebookListener:
+# {"id":"sourceFile","fileName":"FirebaseFacebookAuth.kt"}
+com.ups.firebaselib.FirebaseFacebookAuth$facebookLogin$1 -> com.ups.firebaselib.FirebaseFacebookAuth$facebookLogin$1:
+# {"id":"sourceFile","fileName":"FirebaseFacebookAuth.kt"}
+    27:27:void <init>(com.ups.firebaselib.FirebaseFacebookAuth$FacebookListener,com.ups.firebaselib.FirebaseFacebookAuth) -> <init>
+    29:31:void onCancel() -> onCancel
+    34:36:void onError(com.facebook.FacebookException) -> onError
+    27:27:void onSuccess(java.lang.Object) -> onSuccess
+    39:40:void onSuccess(com.facebook.login.LoginResult) -> onSuccess
+com.ups.firebaselib.FirebaseGoogleAuth -> com.ups.firebaselib.FirebaseGoogleAuth:
+# {"id":"sourceFile","fileName":"FirebaseGoogleAuth.kt"}
+    16:16:void <init>(android.content.Context) -> <init>
+    30:40:void connectGoogle(android.content.Context) -> connectGoogle
+    91:105:void firebaseAuthWithGoogle(java.lang.String,com.ups.firebaselib.FirebaseGoogleAuth$GoogleListener) -> firebaseAuthWithGoogle
+    94:101:void firebaseAuthWithGoogle$lambda-1(com.ups.firebaselib.FirebaseGoogleAuth$GoogleListener,com.google.android.gms.tasks.Task) -> firebaseAuthWithGoogle$lambda-1
+    103:104:void firebaseAuthWithGoogle$lambda-2(com.ups.firebaselib.FirebaseGoogleAuth$GoogleListener,java.lang.Exception) -> firebaseAuthWithGoogle$lambda-2
+    77:86:boolean googleSignOrNot() -> googleSignOrNot
+    58:73:void onActivityResult(int,android.content.Intent,com.ups.firebaselib.FirebaseGoogleAuth$GoogleListener) -> onActivityResult
+    43:45:void signInGoogle(android.app.Activity) -> signInGoogle
+    49:55:void signOutGoogle(com.ups.firebaselib.FirebaseGoogleAuth$GoogleListener) -> signOutGoogle
+    53:54:void signOutGoogle$lambda-0(com.ups.firebaselib.FirebaseGoogleAuth$GoogleListener,com.google.firebase.auth.FirebaseUser,com.google.android.gms.tasks.Task) -> signOutGoogle$lambda-0
+com.ups.firebaselib.FirebaseGoogleAuth$Companion -> com.ups.firebaselib.FirebaseGoogleAuth$Companion:
+# {"id":"sourceFile","fileName":"FirebaseGoogleAuth.kt"}
+    21:21:void <init>() -> <init>
+com.ups.firebaselib.FirebaseGoogleAuth$GoogleListener -> com.ups.firebaselib.FirebaseGoogleAuth$GoogleListener:
+# {"id":"sourceFile","fileName":"FirebaseGoogleAuth.kt"}
+com.ups.firebaselib.FirebasePhoneAuth -> com.ups.firebaselib.FirebasePhoneAuth:
+# {"id":"sourceFile","fileName":"FirebasePhoneAuth.kt"}
+    11:19:void <init>(android.content.Context) -> <init>
+    11:11:void access$setResendToken$p(com.ups.firebaselib.FirebasePhoneAuth,com.google.firebase.auth.PhoneAuthProvider$ForceResendingToken) -> access$setResendToken$p
+    70:78:boolean checkVerification(java.lang.String,com.ups.firebaselib.FirebasePhoneAuth$PhoneListener) -> checkVerification
+    11:11:android.content.Context getContext() -> getContext
+    13:13:java.lang.String getStoredVerificationId() -> getStoredVerificationId
+    47:53:boolean phoneLogin(java.lang.String) -> phoneLogin
+    58:63:boolean resendLogin(java.lang.String) -> resendLogin
+    112:120:void resendVerificationCode(java.lang.String) -> resendVerificationCode
+    102:109:void sendVerificationCode(java.lang.String) -> sendVerificationCode
+    13:13:void setStoredVerificationId(java.lang.String) -> setStoredVerificationId
+    86:98:void signInWithPhoneAuthCredential(com.google.firebase.auth.PhoneAuthCredential,com.ups.firebaselib.FirebasePhoneAuth$PhoneListener) -> signInWithPhoneAuthCredential
+    88:97:void signInWithPhoneAuthCredential$lambda-0(com.ups.firebaselib.FirebasePhoneAuth$PhoneListener,com.google.android.gms.tasks.Task) -> signInWithPhoneAuthCredential$lambda-0
+com.ups.firebaselib.FirebasePhoneAuth$PhoneListener -> com.ups.firebaselib.FirebasePhoneAuth$PhoneListener:
+# {"id":"sourceFile","fileName":"FirebasePhoneAuth.kt"}
+com.ups.firebaselib.FirebasePhoneAuth$callBacks$1 -> com.ups.firebaselib.FirebasePhoneAuth$callBacks$1:
+# {"id":"sourceFile","fileName":"FirebasePhoneAuth.kt"}
+    19:19:void <init>(com.ups.firebaselib.FirebasePhoneAuth) -> <init>
+    39:42:void onCodeSent(java.lang.String,com.google.firebase.auth.PhoneAuthProvider$ForceResendingToken) -> onCodeSent
+    22:23:void onVerificationCompleted(com.google.firebase.auth.PhoneAuthCredential) -> onVerificationCompleted
+    26:32:void onVerificationFailed(com.google.firebase.FirebaseException) -> onVerificationFailed

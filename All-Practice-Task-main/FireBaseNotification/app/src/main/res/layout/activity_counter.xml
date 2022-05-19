@@ -13,6 +13,9 @@
             android:text="@string/increment"
             android:gravity="center_horizontal"
             android:textSize="22sp"
+            android:background="@drawable/bg_rec"
+            android:padding="10dp"
+            android:textColor="@color/white"
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -25,16 +28,19 @@
             android:layout_marginStart="12dp"
             android:gravity="center_horizontal"
             android:textSize="22sp"
+            android:background="@drawable/bg_rec"
+            android:padding="10dp"
+            android:textColor="@color/white"
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btnIncrement" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvCounter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:text="hello"
+            android:text="@string/hello"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -8,10 +8,12 @@ import androidx.databinding.DataBindingUtil
 import com.example.firebasenotification.androidTask.activity.TaskActivity
 import com.example.firebasenotification.bottomNavigation.BottomActivity
 import com.example.firebasenotification.broadcastReceiver.BroadcastActivity
+import com.example.firebasenotification.customFont.StyleTextActivity
 import com.example.firebasenotification.databinding.ActivityMainBinding
 import com.example.firebasenotification.databinding.MainDataBindingActivity
+import com.example.firebasenotification.firebaseDbMain.FirebaseDbMainActivity
 import com.example.firebasenotification.foregroundService.ForegroundActivity
-import com.example.firebasenotification.inAppPurchase.SubscriptionActivity
+import com.example.firebasenotification.inAppPurchase.InAPPPurchaseSubActivity
 import com.example.firebasenotification.notification.FirstActivity
 import com.example.firebasenotification.objectDatabase.NoteActivity
 import com.example.firebasenotification.sqlLite.CrudActivity
@@ -63,7 +65,15 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener{
                 startActivity(intent)
             }
             R.id.btn_InAppPurchase ->{
-                val intent = Intent(this, SubscriptionActivity::class.java)
+                val intent = Intent(this, InAPPPurchaseSubActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_Custom_Font ->{
+                val intent = Intent(this, StyleTextActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_Firebase_Db ->{
+                val intent = Intent(this, FirebaseDbMainActivity::class.java)
                 startActivity(intent)
             }
 

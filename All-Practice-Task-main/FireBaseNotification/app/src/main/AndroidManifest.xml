@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.firebasenotification" >
+    package="com.example.firebasenotification">
 
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
@@ -22,9 +22,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FireBaseNotification"
         android:usesCleartextTraffic="true"
-        tools:targetApi="m" >
+        tools:targetApi="m">
         <activity
-            android:name=".inAppPurchase.TODOActivity"
+            android:name=".firebaseDbMain.realtimeDatabase.FirebaseSimpleLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebaseDbMain.realtimeDatabase.FirebaseSimpleRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebaseDbMain.realtimeDatabase.RealTimeAuthenticationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebaseDbMain.fireStoreDb.FirestoreDbActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebaseDbMain.FirebaseDbMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebaseDbMain.realtimeDatabase.RealTimeDBActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customFont.StyleTextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".inAppPurchase.InAPPPurchaseSubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".inAppPurchase.ConsumeNonConsumeActivity"
             android:exported="false" />
         <activity
             android:name=".inAppPurchase.SubscriptionActivity"
@@ -73,7 +97,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -94,7 +118,7 @@
 
         <service
             android:name=".notification.MyFirebaseMessagingService"
-            android:exported="false" >
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>

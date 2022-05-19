@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Regular">
+        <item name="fontFamily">@font/pacifico</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:text">Radha Krishna</item>
+    </style>
+    <style name="Italic">
+        <item name="fontFamily">@font/rubikwetpaintregular</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:text">Radha Krishna</item>
+    </style>
+    <style name="Bold">
+        <item name="fontFamily">@font/rrubikwetpaintregular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:text">Radha Krishna</item>
+    </style>
+    <style name="BoldItalic">
+        <item name="fontFamily">@font/josefinsansbold</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:text">Radha Krishna</item>
+    </style>
+    <style name="RegularCondensed">
+        <item name="fontFamily">@font/grapenutsregular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:text">Radha Krishna</item>
+    </style>
+    <style name="ItalicCondensed">
+        <item name="fontFamily">@font/rubikbubblesregular</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:text">Radha Krishna</item>
+    </style>
+    <style name="BoldCondensed">
+        <item name="fontFamily">@font/beaurivageregular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:text">Radha Krishna</item>
+    </style>
+
+</resources>

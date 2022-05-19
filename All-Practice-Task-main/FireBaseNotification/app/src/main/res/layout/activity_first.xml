@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".notification.FirstActivity">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txtviewdes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,11 +19,14 @@
         android:textSize="16sp"
         />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnretrive"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Get Notification"
+        android:text="@string/get_notification"
+        android:background="@drawable/bg_rec_oval"
+        android:padding="15dp"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/txtviewdes"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

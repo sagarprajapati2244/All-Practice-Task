@@ -41,7 +41,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#116A1313"
+            android:background="@drawable/bg_textview"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -167,7 +167,7 @@
                 android:layout_margin="12dp"
                 android:clickable="true"
                 android:onClick="@{(v)->onClick.onClick(v)}"
-                android:backgroundTint="#95916C"
+                android:backgroundTint="#3B4683"
                 app:cardCornerRadius="5dp"
                 android:focusable="true">
 
@@ -178,7 +178,7 @@
                     android:layout_gravity="center"
                     android:text="@string/add_record"
                     android:layout_marginVertical="8dp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="22sp"
                     android:textStyle="italic" />
 

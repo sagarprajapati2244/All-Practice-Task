@@ -348,80 +348,7 @@ class SubscriptionActivity : AppCompatActivity(), PurchasesUpdatedListener {
                             }
                         }
                     }
-//                    if (!pToken.equals(WEEKLY) || !pToken.equals(MONTHLY) || !pToken.equals(YEARLY)) {
-//                        billingClient.startConnection(object : BillingClientStateListener {
-//                            override fun onBillingServiceDisconnected() {
-//                                Toast.makeText(
-//                                    this@SubscriptionActivity,
-//                                    "Connection Is Lost!!!",
-//                                    Toast.LENGTH_SHORT
-//                                ).show()
-//                            }
-//
-//                            override fun onBillingSetupFinished(p0: BillingResult) {
-//                                skuList.add(WEEKLY)
-//                                skuList.add(MONTHLY)
-//                                skuList.add(YEARLY)
-//                                val params = SkuDetailsParams.newBuilder()
-//                                    .setSkusList(skuList)
-//                                    .setType(BillingClient.SkuType.SUBS)
-//                                billingClient.querySkuDetailsAsync(params.build()) { billingResult, skuDetailsList ->
-//                                    if (billingResult.responseCode == BillingClient.BillingResponseCode.OK) {
-//                                        if (skuDetailsList != null) {
-//                                            list.addAll(skuDetailsList)
-//                                        }
-//                                        Log.e("List", list.toString())
-//                                        for (i in list) {
-//                                            when (i.sku) {
-//                                                WEEKLY -> {
-//                                                    if (!binding.btnWeekly.isEnabled) {
-//                                                        binding.btnWeekly.text = pTok
-//                                                    } else {
-//                                                        runOnUiThread {
-//                                                            binding.btnWeekly.text =
-//                                                                strWeek.plus(i.price)
-//                                                            binding.btnWeekly.setOnClickListener {
-//                                                                launchPurchaseFlow(i)
-//                                                            }
-//                                                        }
-//                                                    }
-//                                                }
-//                                                MONTHLY -> {
-//                                                    if (!binding.btnMonthly.isEnabled) {
-//                                                        binding.btnMonthly.text = pTok
-//                                                    } else {
-//                                                        runOnUiThread {
-//                                                            binding.btnMonthly.text =
-//                                                                strMonth.plus(i.price)
-//                                                            binding.btnMonthly.setOnClickListener {
-//                                                                launchPurchaseFlow(i)
-//                                                            }
-//                                                        }
-//                                                    }
-//                                                }
-//                                                YEARLY -> {
-//                                                    if (!binding.btnYearly.isEnabled) {
-//                                                        binding.btnYearly.text = pTok
-//                                                    } else {
-//                                                        runOnUiThread {
-//                                                            binding.btnYearly.text =
-//                                                                strYear.plus(i.price)
-//                                                            binding.btnYearly.setOnClickListener {
-//                                                                launchPurchaseFlow(i)
-//                                                            }
-//                                                        }
-//                                                    }
-//                                                }
-//                                            }
-//                                        }
-//
-//
-//                                    }
-//                                }
-//                            }
-//                        })
-//                        Toast.makeText(this, "Purchase This $pToken", Toast.LENGTH_SHORT).show()
-//                    }
+
                 }
                 Purchase.PurchaseState.PENDING -> {
                     Toast.makeText(this,
@@ -449,6 +376,8 @@ class SubscriptionActivity : AppCompatActivity(), PurchasesUpdatedListener {
         const val WEEKLY = "com.test.app.sku0098abc.weekly"
         const val MONTHLY = "com.test.app.sku0098abc.monthly"
         const val YEARLY = "com.test.app.sku0098abc.yearly"
+
+
 
     }
 

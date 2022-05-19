@@ -157,7 +157,7 @@ class TaskActivity : AppCompatActivity(), TaskAdapter.OnItemClickListener {
         request.setAllowedOverRoaming(false)
         request.setTitle(trackNames)
         request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-        request.setDestinationInExternalPublicDir("/DownloadMusic", "$trackNames.mp3")
+        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,"$trackNames.mp3")
         manager!!.enqueue(request)
 
     }

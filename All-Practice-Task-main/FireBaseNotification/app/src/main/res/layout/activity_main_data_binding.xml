@@ -1,53 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
+
     <data>
+
         <variable
             name="onClick"
             type="android.view.View.OnClickListener" />
     </data>
 
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".databinding.MainDataBindingActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".databinding.MainDataBindingActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_EditTextDataBind"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/edittextdatabinding"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="@{(v)->onClick.onClick(v)}"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_EditTextDataBind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button"
+            android:onClick="@{(v)->onClick.onClick(v)}"
+            android:padding="15dp"
+            android:text="@string/edittextdatabinding"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_RecyclerDataBind"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/recyclerviewdatabinding"
-        android:onClick="@{(v)->onClick.onClick(v)}"
-        app:layout_constraintTop_toBottomOf="@+id/btn_EditTextDataBind"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_RecyclerDataBind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button"
+            android:onClick="@{(v)->onClick.onClick(v)}"
+            android:padding="15dp"
+            android:text="@string/recyclerviewdatabinding"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_EditTextDataBind" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_AlertDialogDataBind"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/alertdialogdatabinding"
-        android:onClick="@{(v)->onClick.onClick(v)}"
-        app:layout_constraintTop_toBottomOf="@+id/btn_RecyclerDataBind"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_AlertDialogDataBind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button"
+            android:onClick="@{(v)->onClick.onClick(v)}"
+            android:padding="15dp"
+            android:text="@string/alertdialogdatabinding"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_RecyclerDataBind" />
 
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

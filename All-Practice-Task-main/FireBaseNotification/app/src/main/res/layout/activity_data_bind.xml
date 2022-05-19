@@ -49,6 +49,9 @@
             android:gravity="center"
             android:onClick="@{(v)->onClick.onClick(v)}"
             android:text="@string/enter"
+            android:background="@drawable/bg_rec_oval"
+            android:textColor="@color/white"
+            android:padding="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtPAssword" />

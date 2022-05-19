@@ -36,6 +36,9 @@
         android:layout_height="wrap_content"
         android:text="@string/start_foreground_service"
         android:layout_marginTop="24dp"
+        android:background="@drawable/bg_rec_oval"
+        android:textColor="@color/white"
+        android:padding="12dp"
         app:layout_constraintTop_toBottomOf="@+id/edt_Data"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -46,6 +49,9 @@
         android:layout_height="wrap_content"
         android:text="@string/stop_foreground_service"
         android:layout_marginTop="24dp"
+        android:background="@drawable/bg_rec_oval"
+        android:textColor="@color/white"
+        android:padding="12dp"
         app:layout_constraintTop_toBottomOf="@+id/btn_StartService"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
